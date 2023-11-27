@@ -1,0 +1,24 @@
+{
+  "name": "disney-hotstar",
+  "version": "1.0.0",
+  "description": "A Disney Hotstar Clone",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "author": "Harshit Tyagi",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "styled-components": "^6.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.31",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.5"
+  }
+}
