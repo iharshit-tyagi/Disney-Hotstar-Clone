@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+
 import logo from "../utils/images/logo.svg";
 import home from "../utils/images/home-icon.svg";
 import search from "../utils/images/search-icon.svg";
@@ -11,7 +11,7 @@ import series from "../utils/images/series-icon.svg";
 
 function Header() {
   return (
-    <div className="px-4 flex items-center bg-[#090b13] py-1">
+    <div className="px-4 flex items-center bg-[#090b13] py-1 h-14">
       <img className="w-24 " src={logo}></img>
       <ul className=" flex flex-1 justify-evenly ">
         <li className="mx-4 flex  items-center cursor-pointer hover:underline ">
