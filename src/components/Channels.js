@@ -7,7 +7,7 @@ import starWarsChannel from "../utils/images/viewers-starwars.png";
 
 const Channels = () => {
   return (
-    <div className=" mt-9 grid grid-cols-5 gap-3">
+    <div className=" mt-9 grid grid-cols-5 gap-3 pl-7">
       <Channel src={disneyChannel} />
       <Channel src={marvelChannel} />
       <Channel src={nationalChannel} />
