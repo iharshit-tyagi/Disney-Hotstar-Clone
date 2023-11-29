@@ -9,15 +9,15 @@ const ImageSlider = () => {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoPlay: true,
-    autoplaySpeed: 2000,
+    // autoplaySpeed: 1000,
   };
   return (
     <div className="mx-5 my-3  ">
-      <Slider className="w-full overflow-visible " {...settings}>
+      <Slider className="w-full overflow-visible  transition-all" {...settings}>
         <div className="box-border ">
           <img
             className="shadow-sm h-full shadow-gray-50 rounded-md  hover:border border-spacing-3 cursor-pointer"

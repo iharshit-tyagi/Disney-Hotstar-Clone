@@ -1,8 +1,8 @@
 const Channel = ({ src }) => {
   return (
-    <div>
+    <div className="shadow-inner shadow-white">
       <img
-        className=" cursor-pointer w-full h-full object-cover rounded-md border border-gray-50"
+        className=" cursor-pointer w-full h-full object-cover rounded-md transition-all hover:border border-blue-50"
         src={src}
       ></img>
     </div>
