@@ -1,51 +1,39 @@
 import MovieCard from "./MovieCard";
-import card6 from "../utils/images2/card 6.webp";
-import card2 from "../utils/images2/card 2.webp";
-import card3 from "../utils/images2/card 3.webp";
-import card4 from "../utils/images2/card 4.webp";
-import card5 from "../utils/images2/card 5.webp";
-import poster1 from "../utils/images2/poster 1.webp";
-import posterr1 from "../utils/images2/poster 1.png";
-import poster2 from "../utils/images2/poster 2.webp";
-import posterr2 from "../utils/images2/poster 1.png";
-import posterr3 from "../utils/images2/poster 3.webp";
-import posterr6 from "../utils/images2/poster 6.webp";
-import poster6 from "../utils/images2/poster 6.png";
-import poster14 from "../utils/images2/poster 14.webp";
-import poster12 from "../utils/images2/poster 12.png";
-import poster4 from "../utils/images2/poster 4.webp";
+import { moviesData } from "../utils/constants";
 const MoviesContainer = () => {
+  const data = moviesData.movies;
+  console.log(data);
   return (
-    <div className="pt-5 pl-7">
+    <div className="p-5">
       <div>
-        <h4 className="text-xl font-bold mt-9  ">Latest Releases</h4>
+        <h4 className="text-xl font-bold mt-9 ">Latest Releases</h4>
         <div className=" mt-9 grid grid-cols-5 gap-3 pl-7">
-          <MovieCard src={poster1} />
-          <MovieCard src={posterr1} />
-          <MovieCard src={poster2} />
-          <MovieCard src={posterr3} />
-          <MovieCard src={poster4} />
+          <MovieCard src={data[1].backgroundImg} info={data[1]} />
+          <MovieCard src={data[2].backgroundImg} info={data[2]} />
+          <MovieCard src={data[3].backgroundImg} info={data[3]} />
+          <MovieCard src={data[4].backgroundImg} info={data[4]} />
+          <MovieCard src={data[5].backgroundImg} info={data[5]} />
         </div>
       </div>
       <div>
         <h4 className="text-xl font-bold mt-9  ">Recommended For You</h4>
         <div className=" mt-9 grid grid-cols-5 gap-3 pl-7">
-          <MovieCard src={poster6} />
-          <MovieCard src={posterr6} />
-          <MovieCard src={card3} />
-          <MovieCard src={card4} />
-          <MovieCard src={card5} />
+          <MovieCard src={data[6].backgroundImg} info={data[6]} />
+          <MovieCard src={data[7].backgroundImg} info={data[7]} />
+          <MovieCard src={data[8].backgroundImg} info={data[8]} />
+          <MovieCard src={data[9].backgroundImg} info={data[9]} />
+          <MovieCard src={data[10].backgroundImg} info={data[10]} />
         </div>
       </div>
 
       <div>
         <h4 className="text-xl font-bold mt-9  ">Hotstar Specials</h4>
         <div className=" mt-9 grid grid-cols-5 gap-3 pl-7">
-          <MovieCard src={poster1} />
-          <MovieCard src={poster12} />
-          <MovieCard src={poster2} />
-          <MovieCard src={poster14} />
-          <MovieCard src={posterr2} />
+          <MovieCard src={data[11].backgroundImg} info={data[11]} />
+          <MovieCard src={data[12].backgroundImg} info={data[12]} />
+          <MovieCard src={data[13].backgroundImg} info={data[13]} />
+          <MovieCard src={data[14].backgroundImg} info={data[14]} />
+          <MovieCard src={data[15].backgroundImg} info={data[15]} />
         </div>
       </div>
     </div>

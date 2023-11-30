@@ -34,7 +34,7 @@ const appRoute = createBrowserRouter([
       { path: "/Orignal", element: <Orignal /> },
       { path: "/Series", element: <Series /> },
       { path: "/movies", element: <Movies /> },
-      { path: "/watch/:id", element: <WatchPage /> },
+      { path: "/watch/:title", element: <WatchPage /> },
     ],
   },
 ]);
