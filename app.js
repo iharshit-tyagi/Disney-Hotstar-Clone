@@ -8,6 +8,7 @@ import Orignal from "./src/components/Orignal";
 import Series from "./src/components/Series";
 
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import WatchPage from "./src/components/WatchPage";
 
 const root = ReactDOM.createRoot(document.querySelector(".root"));
 
@@ -33,6 +34,7 @@ const appRoute = createBrowserRouter([
       { path: "/Orignal", element: <Orignal /> },
       { path: "/Series", element: <Series /> },
       { path: "/movies", element: <Movies /> },
+      { path: "/watch/:id", element: <WatchPage /> },
     ],
   },
 ]);
