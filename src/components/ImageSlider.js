@@ -5,6 +5,7 @@ import sliderBadag from "../utils/images/slider-badag.jpg";
 import sliderBadaging from "../utils/images/slider-badging.jpg";
 import sliderScale from "../utils/images/slider-scale.jpg";
 import sliderScales from "../utils/images/slider-scales.jpg";
+
 const ImageSlider = () => {
   let settings = {
     dots: true,
