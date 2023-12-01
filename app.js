@@ -6,6 +6,7 @@ import WatchList from "./src/components/WatchList";
 import Movies from "./src/components/Movies";
 import Orignal from "./src/components/Orignal";
 import Series from "./src/components/Series";
+import LoginPage from "./src/components/LoginPage";
 
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import WatchPage from "./src/components/WatchPage";
@@ -35,6 +36,7 @@ const appRoute = createBrowserRouter([
       { path: "/Series", element: <Series /> },
       { path: "/movies", element: <Movies /> },
       { path: "/watch/:title", element: <WatchPage /> },
+      { path: "/login", element: <LoginPage /> },
     ],
   },
 ]);

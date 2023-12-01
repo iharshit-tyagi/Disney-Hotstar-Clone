@@ -62,6 +62,13 @@ function Header() {
             <div className="text-white text-lg">Series</div>
           </li>
         </Link>
+        <Link to={"/login"}>
+          <li className="mx-4 cursor-pointer  ">
+            <div className="text-black text-lg space-x-1.5 px-3 text-center bg-white ">
+              <button>Login</button>
+            </div>
+          </li>
+        </Link>
       </ul>
     </div>
   );
